@@ -16,10 +16,12 @@ const DailyPay = () => {
     }
 
     return (
-        <div className="container mx-auto mt-8 p-4">
-            <h2 className="font-sans font-semibold text-2xl mb-4">What is Your Payment today?</h2>
+        <div className="container mx-auto mt-8 p-4 max-w-md">
+            <h2 className="font-serif font-semibold text-2xl md:text-3xl mb-6 text-green-800 text-center">
+                What is Your Payment Today?
+            </h2>
             <form action={clientAction} ref={formRef} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 justify-center items-center">
-                <p className="text-gray-600 text-lg italic mt-4 items-center">Add today's expenses</p>
+                <p className="text-gray-600 text-lg italic mt-4 text-center">Add today's expenses</p>
                 <div className="mb-4">
                     <label htmlFor="reason" className="block text-gray-700 text-md font-bold mb-2">Reason</label>
                     <input
